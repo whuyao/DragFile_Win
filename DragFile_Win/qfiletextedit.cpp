@@ -63,9 +63,10 @@ QString QFileTextEdit::getFilename(QString sfilename)
     QString abPath = info.absolutePath();
     QString abName = info.completeBaseName();
     QString abSuffix = info.completeSuffix();
+	QString dt = info.lastModified().toString("yyyy-MM-dd hh:mm:ss t");
 
-    QString str = QString("File path = %1\r\nDir path = %2\r\nFile name = %3\r\nFile suffix = %4")\
-            .arg(abFilepath).arg(abPath).arg(abName).arg(abSuffix);
+    QString str = QString("File path = %1\r\nDir path = %2\r\nFile name = %3\r\nFile suffix = %4\r\Last Read = %5\r\n")\
+            .arg(abFilepath).arg(abPath).arg(abName).arg(abSuffix).arg(dt);
 
     return str;
 
