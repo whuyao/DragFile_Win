@@ -46,43 +46,31 @@
     <ClCompile Include="DragFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_DragFile.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_DragFile.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\qrc_dragfilerc.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
+    
+    
+    
     <ClCompile Include="qfiletextedit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_qfiletextedit.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_qfiletextedit.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
+    
+    
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="DragFile.h">
+    <QtMoc Include="DragFile.h">
       <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="DragFile.ui">
+    </QtMoc>
+    <QtUic Include="DragFile.ui">
       <Filter>Form Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="dragfilerc.qrc">
+    </QtUic>
+    <QtRcc Include="dragfilerc.qrc">
       <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="qfiletextedit.h">
+    </QtRcc>
+    <QtMoc Include="qfiletextedit.h">
       <Filter>Header Files</Filter>
-    </CustomBuild>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GeneratedFiles\ui_DragFile.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
+    
   </ItemGroup>
   <ItemGroup>
     <None Include="photosurface.icns">

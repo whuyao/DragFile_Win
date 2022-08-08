@@ -1,13 +1,13 @@
 /****************************************************************************
 ** Resource object code
 **
-** Created by: The Resource Compiler for Qt version 5.8.0
+** Created by: The Resource Compiler for Qt version 5.15.2
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
 static const unsigned char qt_resource_data[] = {
-  // D:/Code/DragFile_Win/DragFile_Win/photosurface.icns
+  // E:/Code/code_openlib_msvc2015_x64/Code/DragFile_Win/DragFile_Win/photosurface.icns
   0x0,0x0,0xb9,0x2f,
   0x69,
   0x63,0x6e,0x73,0x0,0x0,0xb9,0x2f,0x54,0x4f,0x43,0x20,0x0,0x0,0x0,0x10,0x69,
@@ -3000,7 +3000,7 @@ static const unsigned char qt_resource_struct[] = {
 0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,
   // :/ICONS/photosurface.icns
   0x0,0x0,0x0,0x10,0x0,0x0,0x0,0x0,0x0,0x1,0x0,0x0,0x0,0x0,
-0x0,0x0,0x1,0x5e,0xf5,0xea,0x84,0xe9,
+0x0,0x0,0x1,0x5e,0xf5,0xea,0x81,0x20,
 
 };
 
@@ -3021,7 +3021,6 @@ namespace QT_NAMESPACE {
 #endif
 
 bool qRegisterResourceData(int, const unsigned char *, const unsigned char *, const unsigned char *);
-
 bool qUnregisterResourceData(int, const unsigned char *, const unsigned char *, const unsigned char *);
 
 #ifdef QT_NAMESPACE
@@ -3031,16 +3030,18 @@ bool qUnregisterResourceData(int, const unsigned char *, const unsigned char *, 
 int QT_RCC_MANGLE_NAMESPACE(qInitResources_dragfilerc)();
 int QT_RCC_MANGLE_NAMESPACE(qInitResources_dragfilerc)()
 {
+    int version = 3;
     QT_RCC_PREPEND_NAMESPACE(qRegisterResourceData)
-        (0x02, qt_resource_struct, qt_resource_name, qt_resource_data);
+        (version, qt_resource_struct, qt_resource_name, qt_resource_data);
     return 1;
 }
 
 int QT_RCC_MANGLE_NAMESPACE(qCleanupResources_dragfilerc)();
 int QT_RCC_MANGLE_NAMESPACE(qCleanupResources_dragfilerc)()
 {
+    int version = 3;
     QT_RCC_PREPEND_NAMESPACE(qUnregisterResourceData)
-       (0x02, qt_resource_struct, qt_resource_name, qt_resource_data);
+       (version, qt_resource_struct, qt_resource_name, qt_resource_data);
     return 1;
 }
 

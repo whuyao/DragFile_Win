@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'DragFile.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.15.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,10 +10,8 @@
 #define UI_DRAGFILE_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 #include "qfiletextedit.h"
@@ -29,19 +27,19 @@ public:
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
-            Widget->setObjectName(QStringLiteral("Widget"));
+            Widget->setObjectName(QString::fromUtf8("Widget"));
         Widget->resize(471, 377);
         QIcon icon;
-        icon.addFile(QStringLiteral(":/ICONS/photosurface.icns"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/ICONS/photosurface.icns"), QSize(), QIcon::Normal, QIcon::Off);
         Widget->setWindowIcon(icon);
         verticalLayout = new QVBoxLayout(Widget);
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         text = new QFileTextEdit(Widget);
-        text->setObjectName(QStringLiteral("text"));
+        text->setObjectName(QString::fromUtf8("text"));
         QFont font;
-        font.setFamily(QStringLiteral("Adobe Kaiti Std"));
+        font.setFamily(QString::fromUtf8("Adobe Kaiti Std"));
         text->setFont(font);
         text->setReadOnly(false);
 
@@ -55,7 +53,7 @@ public:
 
     void retranslateUi(QWidget *Widget)
     {
-        Widget->setWindowTitle(QApplication::translate("Widget", "Widget", Q_NULLPTR));
+        Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
     } // retranslateUi
 
 };
